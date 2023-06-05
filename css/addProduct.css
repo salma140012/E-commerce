@@ -1,0 +1,79 @@
+body{
+  background-color: white;
+}
+.jc-center {
+  margin: auto;
+ width: 50%;
+}
+
+ .card{
+     width:  750px;
+     height: 500px;
+     border-radius: 5px;
+     color: black;
+     background-color: rgba(255, 255, 255, 0.464);
+     box-shadow: 0 4px 8px 0 rgba(4, 4, 4, 0.2);
+     margin-top: 25px;
+     margin-bottom: 25px;
+   
+ }
+ .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+ .card input[type=text],[type=number],[type=file],[type=textarea] {
+
+    margin-top: 100px;
+   width:  500px;
+   padding: 10px;
+   margin: 8px 0;
+   font-size: 13px;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   
+    
+ }
+ .card input[type=textarea]{
+  margin-left: 170px;
+  height: 50px;
+ }
+
+ .card from .error-msg{
+
+  background: crimson;
+  color: #fff;
+  
+  
+  }
+
+ .card .roww,.roww4{
+  display: flex;
+  align-items: center;
+ }
+  .button{
+   
+    width:75%;
+    color: #fff;
+    width:85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display:block;
+    margin:auto;
+    background:linear-gradient(to right,rgb(119, 1, 5),#512a2a);
+    border:0;
+    outline: none;
+    border-radius: 30px;
+  }
+  .roww7 label,.roww4 label{
+    margin-left:40px;
+    font-size: 12px;
+    margin-right: 5px;
+    
+  }
+ .roww label{
+  margin-left:80px;
+  margin-right: 5px;
+  font-size: 12px;
+ }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/brands-markets.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <title>Markets</title>
+</head>
+
+<body>
+    <?php include 'navbar.php'; ?>
+    <?php
+
+    $sql = "SELECT * FROM `user` WHERE `user_type`='market'";
+    $r = mysqli_query($conn, $sql);
+
+    $market_name = [];
+    $market_id = [];
+
+
+    while ($array = mysqli_fetch_array($r)) {
+        $market_name[] = $array['name'];
+
+
+    }
+
+    ?>
+    <section class="brand-list">
+        <form action="" method="post">
+            <div class="brand-container">
+
+                <?php
+                foreach ($market_name as $a_market):
+
+                            $sql2 = "SELECT * FROM `user` WHERE `name`='$a_market'";
+                            $r2 = mysqli_query($conn, $sql2);
+                            while ($array = mysqli_fetch_array($r2)) {
+                                $market_id = $array['id'];
+                            }
+                           
+                    ?>
+                    <div class="cell2">
+                        <div class="heart">
+                        <a href='login.php'>
+                            <button style="margin-right:400px;" type="button"
+                                class="cart-btn"> <i
+                                    style="color:#610000;" class="fa fa-heart"></i> Like</button>
+                        </a>
+                            <a href='marketProducts.php?marketId=<?php echo $market_id; ?>'>
+                                <button style="margin-right:330px;" type="button" class="cart-btn"> <i
+                                        style="color:#610000;" class="fa fa-eye"></i> See all products</button>
+                            </a>
+                        </div>
+                        <div class="name">
+
+                            <?php
+
+                            echo $a_market;
+                        
+
+                            ?>
+
+                        </div>
+
+                    </div>
+                    <?php endforeach;
+
+
+
+                ?>
+            </div>
+        </form>
+
+    </section>
+
+
+ 
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+.flex-box{
+    display: flex;
+    width: 1000px;
+    margin: 20px auto;
+}
+.left2{
+    width:50%
+}
+
+.big-img{
+    margin-top: 50px;
+    width: 250px;
+}
+.big-img img{
+    width: inherit;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 15px;
+}
+.small-image{
+    width:50px;
+    overflow: hidden;
+    border: 1.5px solid black;
+    
+}
+.small-image img{
+    width:inherit;
+    cursor: pointer;
+    transition: 100 0.3s ease;
+}
+.small-image:hover img{
+    transform: scale(1.2);
+}
+.url{
+    font-size:16px;
+    font-weight:400;
+    color: black;
+}
+.pname{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.price{
+    font-size:20px;
+    font-weight:bold;
+    margin:20px 0;
+}
+
+.quantity{
+    display: flex;
+}
+.quantity p{
+    margin-top: 3.5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.quantity input{
+    width:40px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.btn-box1,.btn-box2{
+    display: flex;
+    margin: 20px 0;
+}
+
+.btn-box1 button,.btn-box2 button{
+    font-weight: 400;
+    width: 100%;
+    font-size: 20px;
+    padding: 8px 25px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+   
+}
+.btn-box1 button{
+    color: white;
+    background: linear-gradient(to right,rgb(119, 1, 5),#512a2a);
+    margin-right: 10px;
+}
+.btn-box2 button{
+   
+    color:white;
+    background: linear-gradient(to left,rgb(86, 22, 22),rgb(46, 45, 45));
+    margin-right: 10px;
+}
+.btn-box2 i{
+   color: rgb(191, 113, 115);
+    margin-right: 10px;
+}
+.bottomDiv{
+   margin-left: 70px;
+   margin-right: 750px;
+}
+
+.product-list {
+    color: black;
+    background-color: #dfe6e9;
+    padding: 3em;
+
+}
+
+.bottomDiv li{
+    width: 730px;
+    text-align: justify;
+    text-justify: inter-word;
+    list-style: disc;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 400;
+    font-family: 'Work Sans',sans-serif;
+    
+}
+

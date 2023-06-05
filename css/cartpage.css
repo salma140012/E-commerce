@@ -1,0 +1,164 @@
+.message{
+  position: sticky;
+  top:0; left:0; right:0;
+  padding:15px 10px;
+  background-color: var(--white);
+  text-align: center;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+  color:var(--black);
+  font-size: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+html{
+  font-size: 90%;
+  overflow-x: hidden;
+}
+.cart-page{
+    
+    margin: 80px auto;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    table-layout:fixed;
+    border: 1px solid #b6b3b3;
+    border-radius: 10px;
+}
+.cart-info { 
+    display:flex;
+    flex-wrap: wrap;
+}
+.cart-info-right { 
+  display:flex;
+  flex-wrap: wrap;
+}
+.cart-info-left { 
+  display:flex;
+  flex-wrap: wrap;
+}
+.small-container-cart-page{
+  display: grid;
+}
+
+tr{
+    border: 1px solid #b6b3b3;
+    border-radius: 10px;
+}
+ th{
+  
+    padding: 5px;
+    color: white;
+    background: linear-gradient(to right,rgb(119, 1, 5),#512a2a);
+    font-weight: normal;
+   
+    
+}
+
+
+.infoo{
+  font-weight: bold;
+}
+img {
+
+    height: 80px;
+    width: 80px;
+    margin-right:10px ;
+
+  
+  }
+  td{
+    padding: 10px 5px;
+    
+   }
+  
+  td input{
+    width:40px;
+    height:30px;
+    padding:5px;
+    text-align: center;
+  }
+  td i{
+    margin-right: 5px;
+  }
+  td a{
+    color:rgb(124, 0, 0);
+    font-size: 12px;
+   
+  }
+  .total-price{
+    display: flex;
+    justify-content: flex-end;
+
+  }
+  .total-price table{
+    border-top: 3px solid rgb(119, 1, 5);
+    width:100%;
+    max-width:400px ;
+    
+    
+  }
+  
+  
+  @media screen and (max-width:600px){
+    .cart-info p{
+        display:none;
+
+        
+    }
+    
+  }
+  .total-price a{
+    display: block;
+    text-align: center;
+    height:40px;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+
+}
+.total-price a:hover{
+    background-color: rgb(119, 1, 5);
+}
+
+.small-container-cart-page input{
+  display: block;
+  text-align: center;
+  height:40px;
+  line-height: 40px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+
+}
+.small-container-cart-page input:hover{
+  background-color: rgb(119, 1, 5);
+}
+.cart-info:hover{
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    transform: scale(1.01);
+}
+
+.btnUpdate{
+  width: 55px;
+  background:linear-gradient(to right,rgb(119, 1, 5),#512a2a);
+  
+  border: none;
+  color: #fff;
+  border-radius: 50px;
+  
+  margin-left: 120px;
+  align-items: center;
+  justify-content: center;
+}
+
+.quan{
+  margin-left: 220px;
+  width: 60px;
+}
+.subtotal{
+align-self: center;
+}
